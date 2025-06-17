@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Baloo+Bhai+2:wght@400..800&family=Danfo&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --bgcolor1:black;
+    --bgcolor2:azure;
+    --textcolor1:white;
+    --textcolor2:black;
+    --textcolor3:rgb(230, 230, 36);
+}
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgcolor1);
+}
+
+.maincontainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgcolor1);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem;
+    color: var(--textcolor1);
+    gap: 0.6rem;
+}
+
+/* navigation menu */
+
+.navigation-bar{
+    /* border: 1px solid white; */
+    padding: 0.3rem 0.3rem;
+    width: 100%;
+}
+.navbar{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    padding: 0.2rem 0.2rem;
+}
+.navigation-menu{
+    /* border: 1px solid gainsboro; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 5rem;
+    padding: 0.2rem 0.2rem;
+
+}
+.navbar-links{
+    text-decoration: none;
+    list-style-type: none;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    font-family: "Kanit", serif;
+    padding: 0.5rem 0.5rem;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    color: var(--textcolor3);
+    font-size: 1.55rem;
+    font-weight: bold;
+    display: flex;
+    transition: all ease 0.8s;
+}
+.nav-links:hover{
+    
+    font-size: 1.25rem;
+    color: var(--textcolor2);
+    background-color: var(--textcolor1);
+    padding: 0.2rem 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.navimage{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.6rem;
+}
+.nav-logo{
+    width: 12rem;
+}
+.cart-image{
+    width: 3.5rem;
+    filter: invert(1);
+}
+
+/* main content */
+
+.maincontent{
+    margin-top: 2rem;
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0.5rem;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+.leftbox{
+    /* border: 1px solid firebrick; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */  
+    padding: 0.3rem 0.3rem;
+}
+.upperbox{
+    /* border: 1px solid wheat; */
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+}
+.main-heading{
+    font-size: 5.5rem;
+    font-family: "Kanit", serif;
+    font-weight: bold;
+    color: var(--textcolor3);
+    padding-left: 1.2rem;
+}
+.main-matter{
+    font-size: 1.125rem;
+    font-family: "Kanit", serif;
+    padding: 0 1.2rem;
+}
+.lowerbox{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    margin-top: -6rem;
+}
+.buy-btn{
+    padding: 1rem 2.2rem;   
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    background-color: var(--textcolor3);
+    border: none;
+    text-align: center;
+}
+.buy-btn:hover{
+    background-color: var(--textcolor1);
+    color: var(--textcolor2);
+    /* margin: 0%; */
+}
+.socials{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0.3rem;
+    gap: 1rem;
+}
+.social-links{
+    transition: all ease 0.5s;
+}
+.social-links:hover{
+    background-color:var(--textcolor3);
+    border-radius: 3rem;
+    padding: 0.2rem 1rem;
+   
+    .social-logo{
+        filter: invert(0);
+    }
+}
+.social-logo{
+    filter: invert(1);
+    width: 2.15rem;
+}
+/* .social-logo:hover{
+    filter: invert(0);
+} */
+
+
+
+/* rightbox */
+
+.rightbox{
+    /* border: 1px solid firebrick; */
+    width: 60%;
+    padding: 0.4rem 0.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+    /* border: 1px solid green; */
+    overflow: hidden;
+}
+.shoes-image{
+    overflow: hidden;
+    margin: -14rem 0;
+    position: relative;
+    bottom: 70px;
+    width: 100%;
+    filter: drop-shadow( -2px 4px 17px var(--textcolor3));
+    animation: show 0.5s ease 0s 1;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width:1729px){
+    .imgcontainer{
+        overflow: visible;
+        justify-content: center;
+        align-items: center;
+    }
+    .shoes-image{
+        width: 100%;
+        overflow: visible;
+    }
+}
+@media screen and (max-width:1520px){
+    .imgcontainer{
+        overflow: visible;
+        justify-content: center;
+        align-items: center;
+    }
+    .shoes-image{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1717px){
+    .lowerbox{
+        justify-content: center;
+        align-items: center;
+        gap:13rem;
+    }
+} 
+
+@media screen and (max-width:1518px){
+    .lowerbox{
+        justify-content: center;
+        align-items: center;
+        gap:10rem;
+    }
+} 
+    
+
+@media screen and (max-width:884px) {
+    .shoes-image{
+        position: none;
+        margin: 0;
+    }
+    .maincontent{
+        gap: 2rem;
+    }
+    .socials{
+        gap:1rem;
+    }
+    .social-links{
+        padding:0;
+    }
+}
+
+
+@media screen and (max-width:1479px){
+    .maincontent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .leftbox{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        padding: 1rem 0.5rem;
+    }
+    .upperbox{
+        margin: 0;
+    }
+    .rightbox{
+        width: 100%;
+    }
+    .imgcontainer{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .main-heading{
+        text-align: center;
+    }
+    .main-matter{
+        text-align: center;
+    }
+}
+
+.nav-btn{
+    display: none;
+    border: none;
+    background-color: var(--bgcolor1);
+}
+
+@media screen and (max-width:1301px){
+    .navigation-menu{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+        background-color: var(--bgcolor1);
+        margin: auto 0;
+        padding: 0.3rem 1.3rem;
+    }
+    .navigation-btn{
+        filter: invert(1);
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:999px) {
+    
+    .lowerbox{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1013px) {
+    .lowerbox{
+        justify-content: center;
+        align-items: center;
+        gap:3rem;
+    }
+}
+
+@media screen and (max-width:867px) {
+    .main-heading{
+        font-size: 4.5rem;
+    }
+    .main-matter{
+        font-size: 1rem;
+    }
+    .buy-btn{
+        padding: 0.8rem 1.7rem;
+    }
+    
+}
+
+@media screen and (max-width:742px){
+    .main-heading{
+        font-size: 3.5rem;
+    }
+    .main-matter{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:638px) {
+    .buy-btn{
+        font-size: 1rem;
+    }
+    .main-heading{
+        font-size: 2.5rem;
+    }
+    .main-matter{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:608px) {
+    .buy-btn{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:588px){
+    .buy-btn{
+        font-size: 0.7rem;
+    }
+    .social-logo{
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+
+@media screen and (max-width:547px) {
+    .buy-btn{
+        font-size: 0.6rem;
+    }
+    .social-logo{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    
+}
+@media screen and (max-width:502px) {
+    .buy-btn{
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:493px) {
+    .buy-btn{
+        font-size: 0.4rem;
+    }
+    .main-heading{
+        font-size: 2rem;
+    }
+    .main-matter{
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:437px) {
+    .buy-btn{
+        font-size: 0.3rem;
+    }
+}
+@media screen and (max-width:431px) {
+    .buy-btn{
+        font-size: 0.2rem;
+    }
+    .main-heading{
+        font-size: 1.7rem;
+    }
+    .main-matter{
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width:417px) {
+    .buy-btn{
+        font-size: 0.2rem;
+        padding: 0.5rem 1rem;
+    }
+    .main-heading{
+        font-size: 1.7rem;
+    }
+    .main-matter{
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width:394px) {
+    .buy-btn{
+        font-size: 0.2rem;
+        padding: 0.5rem 1rem;
+    }
+    .main-heading{
+        font-size: 1.3rem;
+    }
+    .main-matter{
+        font-size: 0.3rem;
+    }
+}
+
+@media screen and (max-width:384px) {
+    .buy-btn{
+        font-size: 0.2rem;
+        padding: 0.3rem 0.8rem;
+    }
+    .main-heading{
+        font-size: 1.3rem;
+    }
+    .main-matter{
+        font-size: 0.3rem;
+    }
+    .social-logo{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .nav-btn{
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .nav-btn{
+        margin-left:-7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
