@@ -5,6 +5,6 @@ This repository contains some cool layouts/Landing pages which are built using p
 There will be total 5 or 6 landing pages.
 
 1. Nike Landing page
-![Nike](nike.png)
+
 
 ```
