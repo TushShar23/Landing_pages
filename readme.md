@@ -7,6 +7,7 @@ There will be total 5 or 6 landing pages.
 1. Nike landing page
 2. Sheryians youtube video landing page
 3. Starbucks landing page
+4. Travel Booking side landing page - background used is a stock video
 
 
 ```
